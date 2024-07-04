@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дима Касаткин](https://up.htmlacademy.ru/htmlcss-individual/2/user/2553233).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
 
 ---
 
