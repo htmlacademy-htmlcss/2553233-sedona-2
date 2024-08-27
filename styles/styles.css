@@ -18,8 +18,11 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
+  margin: 0;
 }
 
 .button {
@@ -36,14 +39,14 @@ body {
   border-radius: 5%;
 }
 
+.content-white-background-color {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 /* Pages */
 
 /* Header */
-
-.page-header {
-  color: #000000;
-  background-color: #ffffff;
-}
 
 .navigation-link {
   font-size: 20px;
@@ -54,13 +57,22 @@ body {
   text-decoration: none;
 }
 
+.navigation-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 /* Main page */
 
 .index-main {
-  background-image: url("../images/main-page-welcome-background.jpg");
-  background-repeat: no-repeat;
   text-align: center;
-  background-size:100% auto;
+}
+
+.main-upper-background {
+  background-image: url("../images/divider.svg"), url("../images/main-page-welcome-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto, cover;
+  background-position: left bottom, left top;
 }
 
 .advantages-main {
@@ -79,6 +91,9 @@ body {
 
 .advantages-list {
   text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .advantages-title {
@@ -102,7 +117,9 @@ body {
 }
 
 .infrastructure-list {
-  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .infrastructure-top {
@@ -167,10 +184,10 @@ body {
   text-decoration: none;
 }
 
-.catalog-main {
+.catalog-upper-background {
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .catalog-filter {
@@ -194,6 +211,12 @@ body {
 
 .button-filter-reset {
   background-color: transparent;
+}
+
+.hotel-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .hotel-result {
@@ -224,6 +247,12 @@ body {
 
 .hotel-card-button-infavorites {
   background-color: #7DB54F;
+}
+
+.pagination {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .pagination-link {
@@ -288,6 +317,12 @@ body {
 }
 
 /* Footer */
+
+.footer-social-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
 .footer-number {
   font-family: inherit;
