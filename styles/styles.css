@@ -108,6 +108,12 @@ body {
   padding: 20px 16px;
 }
 
+.navigation-link-button {
+  padding: 8px 34px;
+  margin: 14px 0 14px 20px;
+  display: block;
+}
+
 .navigation-list {
   list-style-type: none;
   padding: 0;
@@ -126,6 +132,10 @@ body {
 .navigation-user .navigation-link {
   min-width: 20px;
   min-height: 20px;
+}
+
+.navigation-user .navigation-link {
+  padding: 22px 12px;
 }
 
 /* Основная страница */
@@ -176,12 +186,25 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
   min-height: 385px;
   display: flex;
+}
+
+.description-block {
+  padding: 112.5px 85px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.description-block-with-image {
+  padding: 102px 85px;
 }
 
 .advantages-title {
@@ -191,6 +214,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 62px;
+  flex-grow: 1;
 }
 
 .advantages-description {
@@ -274,11 +298,6 @@ body {
   margin: 0;
 }
 
-.description-block {
-  margin: 0 85px;
-  align-self: center;
-}
-
 /* Блок с ссылкой на каталог */
 
 .catalog-link {
@@ -307,7 +326,7 @@ body {
 .catalog-link-button {
   font-size: 20px;
   line-height: 36px;
-  padding: 8px 50px;
+  padding: 13px 50px;
 }
 
 /* Страница каталога гостиниц */
@@ -480,6 +499,7 @@ body {
 
 .select-control-button {
   min-width: 48px;
+  min-height: 48px;
   margin-right: 8px;
 }
 
@@ -555,11 +575,24 @@ body {
 
 .hotel-card-stars-raiting-row {
   display: flex;
-  justify-content: space-between;
 }
 
 .hotel-card-stars, .hotel-card-raiting {
   margin: 0;
+  min-width: 18px;
+  min-height: 17px;
+}
+
+.hotel-card-raiting {
+  display: block;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 9px 22px 8px 23px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #F2F2F2;
+  border-radius: 4px;
 }
 
 .hotel-card-stars {
@@ -652,10 +685,19 @@ body {
 }
 
 .newsletter-email {
+  font-family: "PT Sans" sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   width: 432px;
   text-align: left;
   padding: 14px 20px;
   border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.newsletter-catalog .newsletter-email {
+  background-color: #F2F2F2;
 }
 
 .newsletter-button {
