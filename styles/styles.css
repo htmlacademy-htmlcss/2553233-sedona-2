@@ -102,7 +102,13 @@ body {
   position: absolute;
 }
 
-.navigation-item:first-child{
+.navigation-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 530px;
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 170px;
 }
 
@@ -150,15 +156,6 @@ body {
   display: block;
 }
 
-.navigation-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  width: 530px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .navigation-user {
   max-width: 280px;
   margin-left: auto;
@@ -172,13 +169,13 @@ body {
   margin: 0;
 }
 
-.navigation-user .navigation-item:nth-child(1){
+.navigation-link-search {
   background-image: url("../images/icons-search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.navigation-user .navigation-item:nth-child(2){
+.navigation-link-fav {
   background-image: url("../images/icons-heart.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -498,43 +495,18 @@ body {
   border: none;
 }
 
-.catalog-filter-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.catalog-filter-group-value {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-.catalog-filter-value-row {
-  display: flex;
-  gap: 2px;
-  padding-bottom: 36px;
-}
-
-.value-size {
-  font-weight: 700;
-  font-size: 18px;
-  width: 103px;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px 0 0 4px;
-}
-
-.value-size-max {
-  border-radius: 0 4px 4px 0;
-}
-
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
   padding: 0 0 32px;
+}
+
+.catalog-filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-item {
@@ -546,7 +518,163 @@ body {
   padding-bottom: 0;
 }
 
-.catalog-value-buttons {
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark-square {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  display: block;
+}
+
+.control-mark-circle {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.control:hover .control-mark-square,
+.control:hover .control-mark-circle
+{
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus-within .control-mark-square,
+.control:focus-within .control-mark-circle
+{
+  outline: 3px solid #83B3D3;
+}
+
+.control:active .control-mark-square,
+.control:active .control-mark-circle
+{
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-square::after {
+  content: "";
+  background-image: url("../images/checkbox-checked-icon.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  display: block;
+}
+
+.control-input[type="radio"]:checked + .control-mark-circle::after {
+  content: "";
+  background-image: url("../images/radio-checked-icon.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 4.5px;
+  left: 5px;
+  width: 10px;
+  height: 11px;
+  display: block;
+}
+
+.catalog-filter-group-value {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 36px;
+  justify-content: center;
+}
+
+.catalog-filter-value-name {
+  position: relative;
+}
+
+.value-size {
+  font-weight: 700;
+  font-size: 18px;
+  width: 103px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #F2F2F2;
+}
+
+.value-size-max {
+  border-radius: 0 4px 4px 0;
+}
+
+.value-size::-webkit-outer-spin-button,
+.value-size::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.static-value {
+  position: absolute;
+  line-height: 24px;
+  right: 20px;
+  top: 10px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-scale-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.button-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.button-toggle:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.button-toggle:active {
+  outline: 2px solid #83B3D3;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.catalog-filter-buttons {
   display: flex;
   flex-direction: column;
   gap: 32px;
