@@ -109,7 +109,7 @@ body {
   width: 530px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 170px;
+  margin-left: 184px;
 }
 
 .navigation-user > .navigation-item {
@@ -124,8 +124,8 @@ body {
   text-align: center;
   color: inherit;
   text-decoration: none;
-  padding: 20px 0;
-  margin-right: 36px;
+  padding: 20px 0 18px;
+  margin-right: 32.5px;
   position: relative;
 }
 
@@ -193,13 +193,12 @@ body {
 .main-upper-background {
   background-image: url("../images/divider.svg"), url("../images/main-page-welcome-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto, cover;
   background-position: left bottom, left top;
 }
 
 .logo {
   padding-top: 51px;
-  padding-bottom: 82px;
+  padding-bottom: 78px;
 }
 
 /* Блоки с преимуществами */
@@ -407,7 +406,8 @@ body {
 .catalog-link-button {
   font-size: 20px;
   line-height: 36px;
-  padding: 13px 50px;
+  padding: 8px 50px;
+  display: inline-block;
 }
 
 /* Страница каталога гостиниц */
@@ -1005,7 +1005,7 @@ body {
   line-height: 26px;
   color: #ffffff;
   margin: 0;
-  padding-bottom: 54px;
+  padding-bottom: 55px;
 }
 
 .newsletter-top-catalog {
@@ -1063,7 +1063,6 @@ body {
   display: flex;
   width: 1060px;
   margin: 0 auto;
-  justify-content: space-between;
   gap:20px;
   padding-top: 40px;
   padding-bottom: 30px;
@@ -1073,28 +1072,8 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  margin-right: 218px;
   display: flex;
-}
-
-.footer-number {
-  font-family: inherit;
-  color: inherit;
-  text-align: center;
-  font-size: 40px;
-  line-height: 40px;
-  text-decoration: none;
-}
-
-.footer-number:hover {
-  color: #756157;
-}
-
-.footer-number:focus {
-  color: #756157;
-}
-
-.footer-number:active {
-  color: #7561574D;
 }
 
 .footer-social-link {
@@ -1126,11 +1105,33 @@ body {
   fill: #68A2CA4D;
 }
 
+.footer-number {
+  font-family: inherit;
+  color: inherit;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.footer-number:hover {
+  color: #756157;
+}
+
+.footer-number:focus {
+  color: #756157;
+}
+
+.footer-number:active {
+  color: #7561574D;
+}
+
 .footer-htmlacademy-link {
   display: block;
   min-width: 120px;
   min-height: 35px;
   position: relative;
+  margin-left: auto;
 }
 
 .footer-htmlacademy-icon {
@@ -1138,7 +1139,6 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
   margin: auto;
   fill: black;
 }
