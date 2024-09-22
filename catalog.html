@@ -8,7 +8,7 @@
 
   <body>
     <div class="content-white-background-color">
-      <header class="page-header">
+      <header data-test="header" class="page-header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип для Города Седона">
@@ -47,7 +47,7 @@
         </nav>
       </header>
 
-      <main class="catalog-main">
+      <main data-test="main" class="catalog-main">
           <div class="filter-section">
             <header class="catalog-header">
               <h1 class="catalog-header-title">Гостиницы Седоны</h1>
@@ -65,7 +65,7 @@
               </ul>
             </header>
 
-            <section class="hotel-preferences">
+            <section data-test="filter" class="hotel-preferences">
               <h2 class="visually-hidden">Отфильтрованный список гостиниц</h2>
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <div class="catalog-filter-left-blocks">
@@ -156,7 +156,7 @@
               </form>
             </section>
           </div>
-          <div class="catalog-content">
+          <div data-test="catalog" class="catalog-content">
             <div class="hotel-filters">
               <h2 class="hotel-result">Найдено гостиниц: 38</h2>
               <div class="select-control-position">
@@ -348,7 +348,7 @@
           </div>
         </section>
 
-        <section class="newsletter-catalog">
+        <section data-test="subscribe" class="newsletter-catalog">
           <div class="newsletter-content">
             <h2 class="newsletter-top newsletter-top-catalog">Подпишитесь на рассылку</h2>
             <p class="newsletter-description newsletter-description-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
@@ -360,7 +360,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer data-test="footer" class="page-footer">
         <div class="footer-row">
           <ul class="footer-social-list">
             <li class="footer-social-item">
