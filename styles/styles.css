@@ -336,7 +336,6 @@ body {
 .infrastructure-item {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  display: flex;
 }
 
 .infrastructure-item .description-block {
