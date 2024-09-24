@@ -1035,6 +1035,7 @@ body {
 
 .catalog-filter-buttons {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 32px;
   margin-top: 56px;
@@ -1234,16 +1235,19 @@ body {
 
 .hotel-card-buttons {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   padding-bottom: 16px;
 }
 
 .hotel-card-button-details {
-  padding: 8px 26px;
+  padding: 8px 20px;
+  min-width: 100px;
 }
 
 .hotel-card-button-favorites {
   padding: 8px 20px;
+  min-width: 100px;
   background-color: #82b3d3;
 }
 
@@ -1288,6 +1292,7 @@ body {
 
 .hotel-card-stars-raiting-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -1311,6 +1316,7 @@ body {
 
 .hotel-card-stars {
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
   align-items: center;
 }
@@ -1478,7 +1484,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-right: 169px;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   width: 190px;
