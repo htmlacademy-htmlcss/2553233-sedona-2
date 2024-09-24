@@ -5,6 +5,7 @@
     <title>Проект Город Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -191,7 +192,7 @@
 
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button type="button" class="modal-close-button">
           <svg width="14" height="14" aria-hidden="true" focusable="false" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" />
           </svg>
@@ -202,13 +203,13 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="search-form-input">
               <label class="search-form-label" for="arrive-date">Дата Заезда:</label>
-              <input class="search-date-input" id="arrive-date" type="text" name="arrive-date" placeholder="Укажите дату">
+              <input class="search-date-input" id="arrive-date" type="text" name="arrive-date" placeholder="Укажите дату" required>
               <span class="search-form-input-error search-form-input-show-message">Мы не можем отправить вас в прошлое.</span>
               <span class="search-form-input-correct">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <p class="search-form-input">
               <label class="search-form-label" for="exit-date">Дата Выезда:</label>
-              <input  class="search-date-input" type="text" id="exit-date" name="exit-date" placeholder="Укажите дату">
+              <input  class="search-date-input" type="text" id="exit-date" name="exit-date" placeholder="Укажите дату" required>
               <span class="search-form-input-error">Мы не можем отправить вас в прошлое.</span>
               <span class="search-form-input-correct search-form-input-show-message">На эти даты есть свободные номера. Пока есть.</span>
             </p>
@@ -216,12 +217,14 @@
               <p class="search-form-input search-form-input-counters">
                 <label class="search-form-label" for="adults-count">Взрослые:</label>
                 <button class="search-count-adult-minus" type="button">
+                  <span class="visually-hidden">Кнопка минус</span>
                   <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
                 </button>
-                <input class="search-count-input" type="number" id="adults-count" value="2" name="adults-count">
+                <input class="search-count-input" type="number" id="adults-count" value="2" name="adults-count" required>
                 <button class="search-count-adult-plus" type="button">
+                  <span class="visually-hidden">Кнопка плюс</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                   </svg>
@@ -231,7 +234,7 @@
                 <span class="search-form-label">
                   <label class="search-form-label search-form-label-children" for="children-count">Дети:</label>
                   <span class="tooltip">
-                    <button class="tooltip-toggle" type="button">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-count">
                       <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
@@ -240,16 +243,18 @@
                       <svg class="tooltip-text-triangle" width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.5 0L19 9H0L9.5 0Z" fill="#333333" />
                       </svg>
-                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-count">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
                 <button class="search-count-children-minus" type="button">
+                  <span class="visually-hidden">Кнопка минус</span>
                   <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
                 </button>
-                <input class="search-count-input" type="number" id="children-count" value="2" name="children-count">
+                <input class="search-count-input" type="number" id="children-count" value="2" name="children-count" required>
                 <button class="search-count-children-plus" type="button">
+                  <span class="visually-hidden">Кнопка плюс</span>
                   <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                   </svg>
