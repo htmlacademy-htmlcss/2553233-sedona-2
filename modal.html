@@ -9,10 +9,6 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="visually-hidden">Модальное окно</h1>
-    </header>
-    <main>
       <div data-test="modal" class="modal-container">
         <div class="modal modal-search">
           <button class="modal-close-button">
@@ -26,13 +22,13 @@
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="search-form-input">
                 <label class="search-form-label" for="arrive-date">Дата Заезда:</label>
-                <input class="search-date-input" id="arrive-date" type="text" name="arrive-date" placeholder="Укажите дату" required>
+                <input class="search-date-input" id="arrive-date" type="text" name="arrive-date" value="27 апреля 2020" placeholder="Укажите дату" required>
                 <span class="search-form-input-error search-form-input-show-message">Мы не можем отправить вас в прошлое.</span>
                 <span class="search-form-input-correct">На эти даты есть свободные номера. Пока есть.</span>
               </p>
               <p class="search-form-input">
                 <label class="search-form-label" for="exit-date">Дата Выезда:</label>
-                <input  class="search-date-input" type="text" id="exit-date" name="exit-date" placeholder="Укажите дату" required>
+                <input  class="search-date-input" type="text" id="exit-date" name="exit-date" value="1 сентября 2023" placeholder="Укажите дату" required>
                 <span class="search-form-input-error">Мы не можем отправить вас в прошлое.</span>
                 <span class="search-form-input-correct search-form-input-show-message">На эти даты есть свободные номера. Пока есть.</span>
               </p>
@@ -89,7 +85,4 @@
           </section>
         </div>
       </div>
-    </main>
-    <footer>
-    </footer>
   </body>
