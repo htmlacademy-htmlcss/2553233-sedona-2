@@ -1139,7 +1139,7 @@ body {
 
 .select-control-icon {
   position: absolute;
-  right: 89px;
+  right: 81px;
   top: 21px;
 }
 
@@ -1539,6 +1539,7 @@ body {
   color: inherit;
   text-align: center;
   width: 331px;
+  margin-right: 40px;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
